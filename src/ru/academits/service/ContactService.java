@@ -58,7 +58,6 @@ public class ContactService {
 
     public ContactValidation removeContact(Contact contact) {
         contactDao.remove(contact);
-
         ContactValidation contactValidation = new ContactValidation();
         contactValidation.setValid(true);
         return contactValidation;
