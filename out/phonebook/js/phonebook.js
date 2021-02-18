@@ -96,10 +96,8 @@ new Vue({
                 url: "/phonebook/remove/selected",
                 data: JSON.stringify(selectedContacts)
             }).always(function () {
-                self.loadData();
+                self.loadFilteredData();
             });
-
-            self.contactFilter = "";
         },
         loadFilteredData: function() {
             var self = this;
